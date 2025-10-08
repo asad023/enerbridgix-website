@@ -8,12 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Tailwind Play CDN for quick demo (open-source friendly) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{--brand:#0ea5a4;--brand-dark:#075e5a}
     body{font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    /* Simple lightbox styles */
     .lightbox{background:rgba(0,0,0,.8);position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:60}
   </style>
 </head>
@@ -95,24 +93,18 @@
     <p class="text-slate-600 mb-6">A curated set of open-source images used as reference for installations and system studies. Replace these with your project photos when available.</p>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-      <!-- Gallery images (Unsplash) -->
       <button class="group overflow-hidden rounded-lg" data-img="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b9b6ee041a6afb0e0a3c3f9d2b1a7ab">
         <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b9b6ee041a6afb0e0a3c3f9d2b1a7ab" alt="solar roof" class="w-full h-44 object-cover transform group-hover:scale-105 transition">
       </button>
-
       <button class="group overflow-hidden rounded-lg" data-img="https://images.unsplash.com/photo-1517821365203-8f3d1f8a6d4a?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&s=b1f0b4d8e6e6f6d4c8f0d0c5e9b7a5c1">
         <img src="https://images.unsplash.com/photo-1517821365203-8f3d1f8a6d4a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=b1f0b4d8e6e6f6d4c8f0d0c5e9b7a5c1" alt="engineer" class="w-full h-44 object-cover transform group-hover:scale-105 transition">
       </button>
-
       <button class="group overflow-hidden rounded-lg" data-img="https://images.unsplash.com/photo-1526378728570-0c2f4a0d9fd6?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6c4f1c36a1e0f7f8b2a5a7d3c2e9f0a2">
         <img src="https://images.unsplash.com/photo-1526378728570-0c2f4a0d9fd6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6c4f1c36a1e0f7f8b2a5a7d3c2e9f0a2" alt="substation" class="w-full h-44 object-cover transform group-hover:scale-105 transition">
       </button>
-
       <button class="group overflow-hidden rounded-lg" data-img="https://images.unsplash.com/photo-1509396239829-4733f1e1c3a8?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f4f2b2a0b2c3d4e5f6a7b8c9d0e1f2a">
         <img src="https://images.unsplash.com/photo-1509396239829-4733f1e1c3a8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f4f2b2a0b2c3d4e5f6a7b8c9d0e1f2a" alt="technical drawing" class="w-full h-44 object-cover transform group-hover:scale-105 transition">
       </button>
-
-      <!-- Add more buttons/images as needed -->
     </div>
   </div>
 </section>
@@ -123,106 +115,4 @@
   <p class="text-slate-600 mb-6">EnerBridgix is a specialized power systems consultancy focused on integrating renewable energy into existing grids and buildings. We combine engineering rigor, regulatory knowledge, and practical deployment experience to deliver solutions that are technically sound and commercially viable.</p>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="p-6 border rounded-lg">
-      <h4 class="font-semibold">Mission</h4>
-      <p class="text-sm text-slate-600">To accelerate adoption of clean, resilient energy by bridging technical expertise with local regulatory landscapes.</p>
-    </div>
-    <div class="p-6 border rounded-lg">
-      <h4 class="font-semibold">Team</h4>
-      <p class="text-sm text-slate-600">Engineers and consultants with backgrounds in PV systems, protection & controls, and utility-scale interconnection studies.</p>
-    </div>
-    <div class="p-6 border rounded-lg">
-      <h4 class="font-semibold">Locations</h4>
-      <p class="text-sm text-slate-600">Lahore, Pakistan · Dubai, UAE · Houston, USA</p>
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="bg-gradient-to-r from-white to-slate-50 py-16">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-    <p class="text-slate-600 mb-6">For project inquiries, quotes, or partnership discussions, send us a message or email:</p>
-
-    <div class="bg-white p-6 rounded-lg shadow">
-      <form id="contactForm" onsubmit="handleForm(event)" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input class="border p-3 rounded" placeholder="Your name" required id="name">
-        <input class="border p-3 rounded" placeholder="Email" type="email" required id="email">
-        <input class="border p-3 rounded" placeholder="Phone (optional)" id="phone">
-        <select class="border p-3 rounded" id="region">
-          <option>Pakistan</option>
-          <option>UAE</option>
-          <option>USA</option>
-        </select>
-        <textarea class="border p-3 rounded md:col-span-2" rows="5" placeholder="Message" id="message" required></textarea>
-        <div class="md:col-span-2 flex items-center gap-4">
-          <button type="submit" class="px-5 py-3 bg-teal-600 text-white rounded">Send Message</button>
-          <a href="mailto:info@enerbridgix.com" class="text-sm text-slate-500">Or email: info@enerbridgix.com</a>
-        </div>
-      </form>
-
-      <p id="formStatus" class="mt-4 text-sm text-green-600 hidden">Message sent (demo). Replace with a backend or Formspree for real submissions.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-white border-t py-6">
-  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500">
-    <div>© <span id="year"></span> EnerBridgix. All rights reserved.</div>
-    <div class="flex gap-4 mt-3 md:mt-0">
-      <a href="#" class="hover:text-teal-600">LinkedIn</a>
-      <a href="#" class="hover:text-teal-600">Twitter</a>
-      <a href="#" class="hover:text-teal-600">GitHub</a>
-    </div>
-  </div>
-</footer>
-
-<!-- Mobile Menu (simple) -->
-<div id="mobileMenu" class="fixed inset-0 bg-black/40 z-40 hidden">
-  <div class="bg-white w-64 h-full p-6">
-    <button id="closeMenu" class="mb-6">Close</button>
-    <nav class="flex flex-col gap-4">
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</div>
-
-<!-- Lightbox placeholder -->
-<div id="lightbox" class="hidden" aria-hidden="true"></div>
-
-<script>
-  // basic interactivity
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  const menuBtn = document.getElementById('menuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const closeMenu = document.getElementById('closeMenu');
-  menuBtn.addEventListener('click', ()=> mobileMenu.classList.remove('hidden'));
-  closeMenu.addEventListener('click', ()=> mobileMenu.classList.add('hidden'));
-
-  // gallery lightbox
-  const lightbox = document.getElementById('lightbox');
-  document.querySelectorAll('[data-img]').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const src = btn.getAttribute('data-img');
-      lightbox.innerHTML = `<div class='lightbox' onclick="this.remove()"><img src='${src}' class='max-h-[90vh] max-w-[90vw] rounded'/></div>`;
-      lightbox.classList.remove('hidden');
-    });
-  });
-
-  // contact form demo handler (client-side only)
-  function handleForm(e){
-    e.preventDefault();
-    // demo: show success message and clear form
-    document.getElementById('formStatus').classList.remove('hidden');
-    document.getElementById('contactForm').reset();
-    // In production: connect to Formspree, Netlify Forms, or your backend
-  }
-</script>
-
-</body>
-</html>
+    <div
